@@ -9,6 +9,7 @@
 	<bean
 		class="com.xworkz.fooddelivary.repositary.FoodItemRepositoryImpl"
 		id="foodItemRepositoryImpl" scope="singleton">
+		<constructor-arg ref="localSessionFactoryBean" />
 	</bean>
 
 	<bean class="com.xworkz.fooddelivary.service.FoodItemServiceImpl"
